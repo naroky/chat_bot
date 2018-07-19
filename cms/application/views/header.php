@@ -18,7 +18,20 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url()?>dist/css/skins/_all-skins.min.css">
-
+<!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="<?php echo base_url()?>bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="<?php echo base_url()?>bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="<?php echo base_url()?>plugins/iCheck/all.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="<?php echo base_url()?>bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="<?php echo base_url()?>plugins/timepicker/bootstrap-timepicker.min.css">
+<!-- Data Table -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+    
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -189,5 +202,7 @@
           </div>
         </nav>
       </header>
-        <?php $this->load->view('left_menu');?> 
+        <?php 
+        $header["session"] = $session;
+        $this->load->view('left_menu',$header);?> 
        

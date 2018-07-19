@@ -28,40 +28,27 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="treeview">
-          <a href="Home">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          </a>
+        <li >
+            <a href="<?php echo base_url()?>question/lists"><i class="fa fa-dashboard"></i><span>Question</span></a>
         </li>
         <li >
-          <a href="<?php echo base_url()?>User">
-            <i class="fa fa-files-o"></i>
-            <span>Users</span>
-          </a>
-        </li>
-        <li>
-          <a href="<?php echo base_url()?>Customer">
-            <i class="fa fa-th"></i> <span>Customer</span>
-          </a>
+            <a href="<?php echo base_url()?>answer/lists"><i class="fa fa-dashboard"></i><span>Answer</span></a>
         </li>
         <li >
-          <a href="<?php echo base_url()?>Product">
-            <i class="fa fa-pie-chart"></i>
-            <span>Product</span>
-          </a>
+            <a href="<?php echo base_url()?>question/lists"><i class="fa fa-dashboard"></i><span>Mapping</span></a>
         </li>
+ 
+        <?php if ($session["level"] == 1) 
+        {
+          ?>
         <li >
-          <a href="<?php echo base_url()?>Category">
-            <i class="fa fa-pie-chart"></i>
-            <span>Category</span>
-          </a>
-        </li>
-        <li >
-          <a href="<?php echo base_url()?>SellOrder">
-            <i class="fa fa-pie-chart"></i>
-            <span>SellOrder</span>
-          </a>
-        </li>       
+            <a href="<?php echo base_url()?>user/list"><i class="fa fa-dashboard"></i><span>User Management</span></a>
+        </li>               
+
+          <?php
+
+        }
+        ?>
       </ul>
     </section>
     <!-- /.sidebar -->

@@ -30,7 +30,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="<?php echo base_url()?>index2.html"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -71,11 +71,11 @@
 <!-- /.login-box -->
 
 <!-- jQuery 3 -->
-<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo base_url()?>bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url()?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- iCheck -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
+<script src="<?php echo base_url()?>plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
     $('input').iCheck({
